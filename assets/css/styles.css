@@ -1,0 +1,151 @@
+section {
+    padding: 50px 0;
+}
+
+.bg--alabaster {
+    background-color: #fafafa;
+}
+
+.bg--calypso {
+    background-color: #295c7a;
+}
+
+.c--supernova {
+    color: #F3CD03;
+}
+
+.c--ebony-clay {
+    color: #252b42;
+}
+
+.c--dove-gray {
+    color: #737373;
+}
+
+.c--alabaster {
+    color: #fafafa;
+}
+
+.introduction-wrapper > h2 {
+    font-family: "Martel-Bold", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    line-height: 50px;
+}
+
+.introduction-wrapper > p {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+}
+
+.details__video-area {
+    position: relative;
+}
+
+.details__video-area__play-button {
+    border: none;
+    border-radius: 50%;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    transition: all 0.2s ease-in-out;
+    left: 43%;
+    width: 80px;
+}
+
+.details__video-area__play-button:hover {
+    background-color: #1e4e69;
+    transition: all 0.2s ease-in-out;
+}
+
+.details__video-area__play-button::after {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+    content: "";
+    height: 0;
+    left: 28px;
+    position: absolute;
+    top: 32px;
+    transform: rotate(90deg);
+    width: 0;
+}
+
+.details__content-area > h2 {
+    font-family: "Martel-Bold", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    line-height: 50px;
+}
+
+.details__content-area > p {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.details__content-area__para {
+    font-family: "Martel-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-left: 29px;
+}
+
+.details__content-area__subtext {
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 14px;
+    font-weight: 700 !important;
+    line-height: 24px;
+    margin-left: 60px;
+    margin-top: -15px;
+}
+
+.card {
+    position: relative;
+    min-width: 300px;
+}
+
+.card::before {
+    background-image: url("../images/Person.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -40px;
+    height: 50px;
+    width: 50px;
+}
+
+.card__card-name {
+    font-family: "Martel-Bold", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.card__person-position {
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 14px;
+}
+
+.card__person-comment{
+    font-family: "OpenSans-Regular", sans-serif;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        min-width: 100px;
+    }
+    .card::before {
+        content: "";
+        background-image: none;
+    }
+}
